@@ -1,0 +1,36 @@
+/* **************************** */
+/* TIPOGRAFIA */
+/* **************************** */
+
+@include font-face("arialregular", "arial-regular");
+@include font-face("arialblack", "arial-black");
+
+body {
+    font-family: $font-primary, sans-serif;
+    font-size: $font-size-base;
+    color: $color-texto-base;
+
+}
+
+
+.logo__titulo
+{
+    font-size: $font-size-titulo;
+
+
+}
+
+.elemento__titulo
+{
+    font-family: $font-secondary;
+    font-size: $font-size-titulo;
+    font-weight: bold;
+
+}
+
+.elemento__parrafo
+{
+    
+}
+
+

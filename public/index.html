@@ -40,13 +40,147 @@
       <!-- *** ESTRUCTURA SEMÁNTICA ***-->
       <!-- Header (encabezado de la página, zona superior)-->
       <!-- Encabezado-->
-      <header class="header"></header>
+      <header class="header">
+        <ul class="header__ul-header">
+          <li class="ul-header__logo">
+            <h1 class="logo__titulo">LOGOTIPO</h1>
+          </li>
+          <li class="ul-header__navegacion">
+            <nav class="navegacion__navegacion-header"><a class="navegacion-header__link alineacion-centro seleccionado" href="#">Inicio</a><a class="navegacion-header__link alineacion-centro" href="productos.html">Productos</a><a class="navegacion-header__link alineacion-centro" href="servicios.html">Servicios</a>
+            </nav>
+          </li>
+          <li class="ul-header__comprar"><a class="comprar__link" href="comprar.html"> 
+              <button class="link__button">Comprar ya</button></a></li>
+        </ul>
+      </header>
       <!-- Main (centro de la página, zona central)-->
       <main class="main">
+        <section class="main__banner">
+          <article class="banner__contenido">
+            <section class="contenido__texto">
+              <h1 class="elemento__titulo">Nueva Cámara, con Nueva Lente</h1>
+              <p class="elemento__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.</p>
+              <a class="elemento__link-banner" href="leermas.html">
+                <button class="link-banner__boton">Leer mas</button></a>
+            </section>
+            <section class="contenido__imagen">
+              <picture class="imagen__picture">
+                <!-- Smartphone-->
+                <source srcset="./assets/img/mobile/camara_canon@1x.jpg 1x, ./assets/img/mobile/camara_canon@2x.jpg 2x, ./assets/img/mobile/camara_canon@3x.jpg 3x" media="(min-width:200px) and (max-width:767px)"/>
+                <!-- Tablet-->
+                <source srcset="./assets/img/tablet/camara_canon@1x.jpg 1x, ./assets/img/tablet/camara_canon@2x.jpg 2x" media="(min-width:768px) and (max-width:900px)"/>
+                <!-- Desktop-->
+                <source srcset="./assets/img/desktop/camara_canon@1x.jpg 1x, ./assets/img/desktop/camara_canon@2x.jpg 2x" media="(min-width:1200px)"/>
+                <img class="imagen__picture-imagen" src="./assets/img/desktop/camara_canon@1x.jpg" alt="camara canon"/>
+              </picture>
+            </section>
+          </article>
+        </section>
+        <section class="main__parrafos">
+          <ul class="main__parrafos__listado-parrafos">
+            <li class="listado-parrafos__parrafo-uno">
+              <ul class="parrafo-uno__listado-parrafos">
+                <li class="listado-parrafos__elemento-texto-izq-arriba centrado">
+                  <h3 class="negrita">Opcion 1</h3>
+                  <p class="formato-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sunt!</p>
+                </li>
+                <li class="listado-parrafos__elemento-imagen centrado">
+                  <picture class="imagen__picturen-frontal">
+                    <!-- Smartphone-->
+                    <source srcset="./assets/img/mobile/camara_canon_frontal@1x.jpg 1x, ./assets/img/mobile/camara_canon_frontal@2x.jpg 2x, ./assets/img/mobile/camara_canon_frontal@3x.jpg 3x" media="(min-width:200px) and (max-width:767px)"/>
+                    <!-- Tablet-->
+                    <source srcset="./assets/img/tablet/camara_canon_frontal@1x.jpg 1x, ./assets/img/tablet/camara_canon_frontal@2x.jpg 2x" media="(min-width:768px) and (max-width:900px)"/>
+                    <!-- Desktop-->
+                    <source srcset="./assets/img/desktop/camara_canon_frontal@1x.jpg 1x, ./assets/img/desktop/camara_canon_frontal@2x.jpg 2x" media="(min-width:1200px)"/>
+                    <img class="imagen__picturen-frontal-imagen" src="./assets/img/desktop/camara_canon_frontal@1x.jpg" alt="camara canon"/>
+                  </picture>
+                </li>
+                <li class="listado-parrafos__elemento-texto-der-arriba centrado">
+                  <h3 class="negrita">Opcion 3</h3>
+                  <p class="formato-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sunt!</p>
+                </li>
+                <li class="listado-parrafos__elemento-texto-izq-abajo centrado">
+                  <h3 class="negrita">Opcion 2</h3>
+                  <p class="formato-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sunt!</p>
+                </li>
+                <li class="listado-parrafos__elemento-texto-der-abajo centrado">
+                  <h3 class="negrita">Opcion 4</h3>
+                  <p class="formato-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sunt!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="listado-parrafos__parrafo-dos">
+              <figure class="parrafo-dos__figure">
+                <picture class="figure__lentes">
+                  <!-- Smartphone-->
+                  <source srcset="./assets/img/mobile/camara_canon_lentes@1x.jpg 1x, ./assets/img/mobile/camara_canon_lentes@2x.jpg 2x, ./assets/img/mobile/camara_canon_lentes@3x.jpg 3x" media="(min-width:200px) and (max-width:767px)"/>
+                  <!-- Tablet-->
+                  <source srcset="./assets/img/tablet/camara_canon_lentes@1x.jpg 1x, ./assets/img/tablet/camara_canon_lentes@2x.jpg 2x" media="(min-width:768px) and (max-width:900px)"/>
+                  <!-- Desktop-->
+                  <source srcset="./assets/img/desktop/camara_canon_lentes@1x.jpg 1x, ./assets/img/desktop/camara_canon_lentes@2x.jpg 2x" media="(min-width:1200px)"/>
+                  <img class="figure__lentes-imagen" src="./assets/img/desktop/camara_canon_lentes@1x.jpg" alt="camara canon"/>
+                </picture>
+                <figcaption class="figure__texto">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id.</p>
+                  <p>Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus. Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna.</p>
+                  <p>A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
       </main>
       <!-- Footer (final de la página, zona inferior)-->
       <footer class="footer">
-        <h6>&copy; Copyright 2020 - Toni Ferra</h6>
+        <ul class="footer__listado">
+          <li class="listado__empresa alto__footer">
+            <ul class="empresa__empresa">
+              <li class="empresa__titulo">
+                <h3 class="negrita">Empresa</h3>
+              </li>
+              <li class="empresa__quienes"><a href="./formulario.html">Quienes Somos</a></li>
+              <li class="empresa__historia"><a href="./historia.html">Historia</a></li>
+            </ul>
+          </li>
+          <li class="listado__comunidad alto__footer">
+            <ul class="comunidad__comunidad">
+              <li class="empresa__titulo">
+                <h3 class="negrita">Comunidad</h3>
+              </li>
+              <li class="empresa__eventos"><a href="./eventos.html">Eventos</a></li>
+              <li class="empresa__blog"><a href="./blog.html">Blog</a></li>
+              <li class="empresa__foros"><a href="./foros.html">Foros</a></li>
+            </ul>
+          </li>
+          <li class="listado__contactar alto__footer">
+            <ul class="contactar__contactar">
+              <li class="contactar__titulo">
+                <h3 class="negrita">Contactar</h3>
+              </li>
+              <li class="contactar__formulario"><a href="./formulario.html">Formulario</a></li>
+              <li class="contactar__telefono"><a href="tel://+34666666666">+34 666 66 66 66</a></li>
+            </ul>
+          </li>
+          <li class="listado__redes alto__footer">
+            <ul class="redes__redes">
+              <li class="redes__titulo">
+                <h3 class="negrita">Redes</h3>
+              </li>
+              <li class="redes__elemento"><a href="https://www.facebook.com">Facebook</a></li>
+              <li class="redes__elemento"><a href="https://www.twitter.com">Twitter</a></li>
+              <li class="redes__elemento"><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+          </li>
+          <li class="listado__formulario alto__footer">
+            <form class="formulario__form" action="" method="post">
+              <input class="form__input" type="email" name="email" placeholder="tu email">
+              <button class="form__button" type="submit">Noticias</button>
+            </form>
+          </li>
+          <li class="listado__copy alto__copy">
+            <h6>&copy; Copyright 2020 - Toni Ferra</h6>
+          </li>
+        </ul>
       </footer>
     </div>
   </body>

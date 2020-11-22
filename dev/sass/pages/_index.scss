@@ -1,0 +1,65 @@
+/* **************************** */
+/* INDEX */
+/* **************************** */
+
+
+body 
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-fondo;
+    color: $color-texto-base;
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+// BANNER 
+.main__banner
+{
+    background-color: $color-fondo-banner;
+}
+
+.contenido__texto
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: $gap-small-percentage;
+
+}
+
+// -------- PARRAFOS --------------
+
+
+
+.elemento__parrafo
+{
+    max-width: 90%;
+
+}
+
+.imagen__picture-imagen
+{
+    z-index: -1;
+}
+
+.listado-parrafos__parrafo-dos {
+
+    background-color: $color-fondo-parrafos;
+
+}
+
+
+.formato-parrafo
+{
+    box-sizing: border-box;
+    width: calcularrem(344px);
+
+
+}
+
