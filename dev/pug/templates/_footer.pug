@@ -1,1 +1,48 @@
-h6 &copy; Copyright #{anyoactual} - #{datasite.site.author}
+
+
+footer.footer
+    ul.footer__listado
+        li.listado__empresa.alto__footer
+            ul.empresa__empresa
+                li.empresa__titulo
+                    h3.negrita Empresa
+                li.empresa__quienes
+                    a(href="./formulario.html") Quienes Somos
+                li.empresa__historia
+                    a(href="./historia.html") Historia
+        li.listado__comunidad.alto__footer
+            ul.comunidad__comunidad
+                li.empresa__titulo
+                    h3.negrita Comunidad
+                li.empresa__eventos
+                    a(href="./eventos.html") Eventos
+                li.empresa__blog
+                    a(href="./blog.html") Blog
+                li.empresa__foros
+                    a(href="./foros.html") Foros
+
+        li.listado__contactar.alto__footer
+            ul.contactar__contactar
+                li.contactar__titulo
+                    h3.negrita Contactar
+                li.contactar__formulario
+                    a(href="./formulario.html") Formulario
+                li.contactar__telefono
+                    a(href="tel://+34666666666") +34 666 66 66 66
+        li.listado__redes.alto__footer
+            ul.redes__redes
+                li.redes__titulo
+                    h3.negrita Redes
+                li.redes__elemento
+                    a(href="https://www.facebook.com") Facebook
+                li.redes__elemento
+                    a(href="https://www.twitter.com") Twitter
+                li.redes__elemento
+                    a(href="https://www.instagram.com") Instagram
+        li.listado__formulario.alto__footer
+            form(class="formulario__form", action="", method="post")
+                input(class="form__input", type="email", name="email", placeholder="tu email")
+                button(class="form__button", type="submit")
+                    | Noticias
+        li.listado__copy.alto__copy
+            h6 &copy; Copyright #{anyoactual} - #{datasite.site.author}

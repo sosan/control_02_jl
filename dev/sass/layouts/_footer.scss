@@ -1,3 +1,45 @@
 /* **************************** */
 /* FOOTER */
 /* **************************** */
+
+// FOOTER
+.footer {
+    background-color: $color-fondo-footer;
+
+}
+
+.alto__footer {
+    height: 100%;
+}
+
+.negrita {
+    font-family: $font-secondary;
+    font-size: calcularrem($font-size-seleccionado);
+    font-weight: bolder;
+}
+
+.empresa__empresa,
+.comunidad__comunidad,
+.contactar__contactar,
+.redes__redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    gap: $gap-small-rem;
+
+}
+
+.listado__formulario {
+
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}

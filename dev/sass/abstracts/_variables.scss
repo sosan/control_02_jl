@@ -6,26 +6,49 @@
 //-------------------- FONT FAMILY --------------------//
 $font-primary: "arialregular";
 $font-secondary: "arialblack";
+
+
+//-------------------- Font sizes --------------------//
 $font-size-base: 16px;
+$font-size-importante: 18px;
+$font-size-titulo: 36px;
 
+$font-size-seleccionado: 18px;
+$font-size-boton: 18px;
 
-
-
+//-------------------- COLORES --------------------//
+$grid-height: calcularrem(580px);
 
 
 //-------------------- COLORES --------------------//
-$blanco: rgb(232, 232, 232);
+$blanco: rgb(255, 255, 255);
 $negro: rgb(0, 0, 0);
+$gris: #c4c4c4;
+$beige: rgb(248, 246, 238);
+$naranja: rgb(242, 98, 74);
+$naranja-claro: rgb(255, 230, 209);
 
 
 //-------------------- COLORES SEMANTICOS --------------------//
-$color-fondo: $negro;
-$color-texto-base: $blanco;
+$color-fondo: $blanco;
+$color-fondo-banner: $naranja-claro;
+$color-fondo-parrafos: $beige;
+$color-fondo-footer: $gris;
+
+$color-texto-base: $negro;
+$color-texto-seleccionado: $naranja;
+
+$color-placeholder: $gris;
+$color-texto-boton-enviar: $blanco;
+$color-fondo-boton-enviar: $naranja;
 
 
+//-------------------- NAVIGATION -------------------- //
+$width-navigation: 10ch;
 
+//-------------------- Gap flex-box -------------------- //
+$gap-small-percentage: 5%;
+$gap-small-rem: calcularrem(20px);
 //-------------------- Responsive sizes -------------------- //
-$large-device-width: 1199px; // Dispositivos de 1200px
-$medium-device-width: 991px; // Dispositivos medios de 992px
-$small-device-width: 767px; // Dispositivos pequeños de 767px
-$mini-device-width: 575px; //Dispositivos telefonos de 575px
+$desktop-medium: 1366px; // Dispositivos de 1200px
+$dektop-large: 1400px; // Dispositivos de 1400px
