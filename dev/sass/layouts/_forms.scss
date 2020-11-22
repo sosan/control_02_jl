@@ -2,24 +2,17 @@
 /* FORMS */
 /* **************************** */
 
-
-
-
-.formulario__form {
+.formulario__form 
+{
     display: flex;
     flex-direction: row;
 
-    // border: 1px solid grey;
-
-    // padding: 2px;
 }
 
 .form__input
 {
 
     @include input-format(37px,black,  0px, $color-fondo,  $color-texto-base, $font-primary, $color-placeholder, 10px, 0.5rem, 10px, 20px );
-    // flex-grow: 2;
-    // border: none;
 }
 
 
@@ -29,21 +22,3 @@
     margin-left: -50px;
 
 }
-
-input {
-    /* Tell the input to use all the available space */
-    
-    /* And hide the input's outline, so the form looks like the outline */
-    // border: none;
-}
-
-input:focus {
-    /* removing the input focus blue box. Put this on the form if you like. */
-    outline: none;
-}
-
-
-
-
-
-

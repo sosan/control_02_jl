@@ -152,16 +152,6 @@ body {
   margin-left: -50px;
 }
 
-input {
-  /* Tell the input to use all the available space */
-  /* And hide the input's outline, so the form looks like the outline */
-}
-
-input:focus {
-  /* removing the input focus blue box. Put this on the form if you like. */
-  outline: none;
-}
-
 /* **************************** */
 /* GRIDS */
 /* **************************** */
@@ -175,7 +165,7 @@ input:focus {
 .header__ul-header {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-template-rows: 80px;
+  grid-template-rows: 5rem;
   grid-template-areas: "l n c";
   width: 100%;
   height: 100%;
@@ -202,7 +192,7 @@ input:focus {
 .main__banner {
   display: grid;
   grid-template-columns: minmax(1366px, 1400px);
-  grid-template-rows: 581px;
+  grid-template-rows: 36.25rem;
   justify-content: center;
 }
 
@@ -248,7 +238,7 @@ input:focus {
   grid-template-columns: 2fr auto auto 2fr;
   grid-template-rows: auto auto;
   grid-template-areas: "ia i i da" "ib i i db";
-  height: 36.3125rem;
+  height: 36.25rem;
   width: 100%;
   justify-self: center;
   align-self: center;
@@ -282,7 +272,7 @@ input:focus {
 .parrafo-dos__figure {
   display: grid;
   grid-template-columns: 2fr 4fr;
-  grid-template-rows: 580px;
+  grid-template-rows: 36.25rem;
   grid-template-areas: "f x";
 }
 
@@ -296,8 +286,8 @@ input:focus {
   grid-area: x;
   align-self: center;
   justify-self: center;
-  max-width: 700px;
-  font-size: 18;
+  max-width: 43.75rem;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 

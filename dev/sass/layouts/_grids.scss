@@ -17,9 +17,8 @@
 {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 80px;
-    grid-template-areas: "l n c"
-    ;
+    grid-template-rows: calcularrem($grid-height-header);
+    grid-template-areas: "l n c";
 
     width: 100%;
     height: 100%;
@@ -58,7 +57,7 @@
 
     display: grid;
     grid-template-columns: minmax($desktop-medium, $dektop-large);
-    grid-template-rows: 581px;
+    grid-template-rows: calcularrem($grid-height-large);
 
     justify-content: center;
 
@@ -74,11 +73,8 @@
 .banner__contenido
 {
     display: grid;
-    // grid-template-columns: 5% 45% 45% 5%;
     grid-template-columns: 50% 50%;
-    // grid-template-columns: minmax(20vmin, 60vmin) minmax(20vmin, 60vmin);
-    // grid-template-columns: 60vmin 60vmin;
-    grid-template-rows: 36.25rem;
+    grid-template-rows: calcularrem($grid-height-large);
     grid-template-areas: 
     "texto imagen";
     width: 100%;
@@ -116,7 +112,6 @@
 .listado-parrafos__parrafo-dos
 {
         display: grid;
-        // grid-template-columns: 90%;
         grid-template-columns: minmax($desktop-medium, $dektop-large);
         grid-template-rows: auto;
         grid-template-areas: "lo";
@@ -142,7 +137,7 @@
     "ib i i db"
     ;
 
-    height: calcularrem(581px);
+    height: calcularrem($grid-height-large);
     width: 100%;
     justify-self: center;
     align-self: center;
@@ -183,10 +178,8 @@
 {
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 580px;
+    grid-template-rows: calcularrem($grid-height-large);
     grid-template-areas: "f x";
-    
-
 
 }
 
@@ -203,8 +196,8 @@
     grid-area: x;
     align-self: center;
     justify-self: center;
-    max-width: 700px;
-    font-size: 18;
+    max-width: calcularrem($desktop-small);
+    font-size: calcularrem($font-size-seleccionado);
     font-weight: bold;
 }
 
@@ -215,7 +208,7 @@
 {
     display: grid;
     grid-template-columns: minmax($desktop-medium, $dektop-large);
-    grid-template-rows: calcularrem(77px) calcularrem(288px);
+    grid-template-rows: calcularrem($grid-height-footer-space) calcularrem($grid-height-footer-content);
     justify-content: center;
 
     grid-template-areas: 
@@ -232,7 +225,7 @@
     grid-area: k;
     display: grid;
     grid-template-columns: repeat(4, 1fr) 1.5fr;
-    grid-template-rows: calcularrem(130px) calcularrem(150px);
+    grid-template-rows: calcularrem($grid-height-list) calcularrem($grid-height-copy);
     grid-template-areas: 
     
     "n n n n n"

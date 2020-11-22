@@ -42,6 +42,14 @@ $color-placeholder: $gris;
 $color-texto-boton-enviar: $blanco;
 $color-fondo-boton-enviar: $naranja;
 
+//-------------------- HEIGHTS GRIDS -------------------- //
+$grid-height-header: 80px;
+$grid-height-large: 580px;
+$grid-height-footer-space: 77px;
+$grid-height-footer-content: 288px;
+
+$grid-height-list: 130px;
+$grid-height-copy: 150px;
 
 //-------------------- NAVIGATION -------------------- //
 $width-navigation: 10ch;
@@ -49,6 +57,7 @@ $width-navigation: 10ch;
 //-------------------- Gap flex-box -------------------- //
 $gap-small-percentage: 5%;
 $gap-small-rem: calcularrem(20px);
-//-------------------- Responsive sizes -------------------- //
+//-------------------- Dispositivos sizes -------------------- //
+$desktop-small: 700px; // Dispositivos de 700px
 $desktop-medium: 1366px; // Dispositivos de 1200px
 $dektop-large: 1400px; // Dispositivos de 1400px
