@@ -157,7 +157,7 @@ body {
 /* **************************** */
 .header {
   display: grid;
-  grid-template-columns: minmax(1366px, 1400px);
+  grid-template-columns: minmax(1200px, 1300px);
   grid-template-rows: auto;
   justify-content: center;
 }
@@ -191,7 +191,7 @@ body {
 
 .main__banner {
   display: grid;
-  grid-template-columns: minmax(1366px, 1400px);
+  grid-template-columns: minmax(1200px, 1300px);
   grid-template-rows: 36.25rem;
   justify-content: center;
 }
@@ -225,7 +225,7 @@ body {
 .listado-parrafos__parrafo-uno,
 .listado-parrafos__parrafo-dos {
   display: grid;
-  grid-template-columns: minmax(1366px, 1400px);
+  grid-template-columns: minmax(1200px, 1300px);
   grid-template-rows: auto;
   grid-template-areas: "lo";
   width: 100%;
@@ -294,7 +294,7 @@ body {
 /* FOOTER */
 .footer {
   display: grid;
-  grid-template-columns: minmax(1366px, 1400px);
+  grid-template-columns: minmax(1200px, 1300px);
   grid-template-rows: 4.8125rem 18rem;
   justify-content: center;
   grid-template-areas: "." "k";
